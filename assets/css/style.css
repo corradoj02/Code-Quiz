@@ -1,0 +1,45 @@
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        position: relative;
+        width: 15rem;
+        margin: 0;
+        left: 50rem;
+        top: 10rem;
+        font-size: 5rem;
+        font-weight: bolder;
+    }
+
+    #start {
+        display:flex;
+        position: absolute;
+        top: 45rem;
+        left: 60rem;
+    }
+
+    #see-score {
+        display:flex;
+        position:absolute;
+        top: 40rem;
+        left: 50rem;
+    }
+
+    #timer {
+        display:flex;
+        position: relative;
+        left: 130rem;
+        top: -2rem;
+        font-size: 2rem;
+    }
+
+    #high-scores {
+        display:flex;
+        position: relative;
+        padding-top:0;
+        padding-bottom:0;
+        top: 1rem;
+        left: 1rem;
+        font-size: 2rem;
+    }
