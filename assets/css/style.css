@@ -11,8 +11,8 @@
         flex-direction: column;
         position: absolute;
         margin: 0;
-        left: 55rem;
-        top: 15rem;
+        left: 45rem;
+        top: 6rem;
         font-size: 5rem;
         font-weight: bolder;
     }
@@ -65,9 +65,18 @@
 
     #timer-count {
         display:flex;
+        font-weight: bolder;
         position: relative;
-        left: 130rem;
+        left: 105rem;
         top: -2rem;
+        font-size: 2rem;
+    }
+    #points-count {
+        display:flex;
+        font-weight: bolder;
+        position: relative;
+        left: 105rem;
+        top: -1rem;
         font-size: 2rem;
     }
 
@@ -102,27 +111,31 @@
 
     #a1{
         position:absolute;
-        left:25rem;
+        left:20rem;
+        font-size: 4rem;
         width:35rem;
     }
 
     #a2{
         position:absolute;
         left: 65rem;
+        font-size: 4rem;
         width:35rem;
     }
 
     #a3{
         position: absolute;
-        left: 25rem;
+        left: 20rem;
+        font-size: 4rem;
         width: 35rem;
-        top:15rem;
+        top:13rem;
     }
 
     #a4{
         position: absolute;
         left: 65rem;
-        top: 15rem;
+        font-size: 4rem;
+        top: 13rem;
         width:35rem;
     }
 

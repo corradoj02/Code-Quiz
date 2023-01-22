@@ -1,6 +1,7 @@
 var startButton = document.querySelector("#start-button");
 var startPage = document.querySelector(".start-page")
 var timerElement = document.querySelector("#timer-count");
+var currentPoints = document.querySelector("#points-count");
 var questionEl = document.querySelector(".question");
 var answerEl = document.querySelector(".answers");
 var option1 = document.querySelector("#a1");
@@ -44,7 +45,19 @@ function question(){
     option2.style.visibility = "visible";
     option3.style.visibility = "visible";
     option4.style.visibility = "visible";
-    questionEl.innerHTML = questions[0][0]
+    for (let i = 0;i < questions.length;i++){
+        questionEl.innerHTML = questions[i].question;
+        option1.innerHTML = questions[i].answers[0].option;
+        option2.innerHTML = questions[i].answers[1].option;
+        option3.innerHTML = questions[i].answers[2].option;
+        option4.innerHTML = questions[i].answers[3].option;
+        
+        option1.addEventListener("click", function(){
+            if (questions[i].answers[0].answer === "incorrect"){
+
+            }
+        })
+    }
     
 }
 
@@ -52,19 +65,30 @@ function startTimer(){
     timer = setInterval(function () {
         timerCount--;
         timerElement.textContent = "Timer: " + timerCount;
-        if (timerCount > 0){
-            if (chosenAnswer === correctAnswer){
-                timerCount += 10;
-                currentPoints += 5;
-            } else {
-                timerCount -= 10;
-            }
-        }
+
+        // if (timerCount > 0){
+        //     if (chosenAnswer === correctAnswer){
+        //         timerCount += 10;
+        //         currentPoints += 5;
+        //     } else {
+        //         timerCount -= 10;
+        //     }
+        // }
         if (timerCount <= 0){
             clearInterval(timer);
+            timesUp();
             localStorage.setItem('currentPoints', currentPoints);
         }
     }, 1000);
+}
+
+function timesUp() {
+    questionEl.innerHTML = "Times Up! Your Score: "  + currentPoints;
+    currentPoints.style.visibility = "hidden";
+    option1.style.visibility = "hidden";
+    option2.style.visibility = "hidden";
+    option3.style.visibility = "hidden";
+    option4.style.visibility = "hidden";
 }
 
 function getScores() {
