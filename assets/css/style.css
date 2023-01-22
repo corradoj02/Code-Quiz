@@ -1,22 +1,59 @@
+:root{
+    --mustard: #E4B61A;
+    --yellow: #FBE134;
+    --fog: #E9EAEC;
+    --charcoal: #2A2E34;
+    --black: #0B0C0C;
+}
 
     .main {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        position: relative;
-        width: 15rem;
+        position: absolute;
         margin: 0;
-        left: 50rem;
-        top: 10rem;
+        left: 55rem;
+        top: 15rem;
         font-size: 5rem;
         font-weight: bolder;
     }
 
-    #start {
+    .start-page {
+        visibility: visible;
+        width:15rem;
+    }
+
+    #logo{
+        width:25rem;
+        height:25rem;
+    }
+
+    button {
+        background-color: var(--yellow);
+        color: var(--charcoal);
+        border-radius: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        transition: all;
+        transition-property: transform, box-shadow;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    button:active {
+        transform: scale(.9);
+        box-shadow: 10px 10px 5px -4px var(--black);
+    }
+
+    #start-button {
         display:flex;
-        position: absolute;
-        top: 45rem;
-        left: 60rem;
+        position: relative;
+        justify-content: center;
+        top:1rem;
+        font-size: 3rem;
+        width:15rem;
+        visibility: visible;
     }
 
     #see-score {
@@ -26,7 +63,7 @@
         left: 50rem;
     }
 
-    #timer {
+    #timer-count {
         display:flex;
         position: relative;
         left: 130rem;
@@ -42,4 +79,53 @@
         top: 1rem;
         left: 1rem;
         font-size: 2rem;
+    }
+
+    .quiz {
+        display: flex;
+        position:absolute;
+        top:1rem;
+        left: -10rem;
+        visibility: hidden;
+    }
+
+    .question{
+        position: absolute;
+        width: 55rem;
+    }
+
+    .answers {
+        top: 25rem;
+        left: -35rem;
+        position: absolute;
+    }
+
+    #a1{
+        position:absolute;
+        left:25rem;
+        width:35rem;
+    }
+
+    #a2{
+        position:absolute;
+        left: 65rem;
+        width:35rem;
+    }
+
+    #a3{
+        position: absolute;
+        left: 25rem;
+        width: 35rem;
+        top:15rem;
+    }
+
+    #a4{
+        position: absolute;
+        left: 65rem;
+        top: 15rem;
+        width:35rem;
+    }
+
+    ul {
+        list-style: none;
     }
