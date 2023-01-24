@@ -57,15 +57,7 @@
         width:15rem;
         visibility: visible;
     }
-/* sets the position and visibility for the "high scores" button */
-    #see-score {
-        display:flex;
-        position:absolute;
-        top: 40rem;
-        left: 50rem;
-        visibility: visible;
-    }
-
+    
     /* sets position and size of the timer */
     #timer-count {
         display:flex;
@@ -75,7 +67,7 @@
         top: -2rem;
         font-size: 2rem;
     }
-
+    
     /* sets the position and size of the points counter */
     #points-count {
         display:flex;
@@ -85,7 +77,8 @@
         top: -1rem;
         font-size: 2rem;
     }
-
+    
+    /* sets the position and visibility for the "high scores" button */
     #high-scores {
         display:flex;
         position: relative;
@@ -96,6 +89,7 @@
         font-size: 2rem;
     }
 
+    /* sets the base position and visibility of all elements within the div with class quiz */
     .quiz {
         display: flex;
         position:absolute;
@@ -104,6 +98,7 @@
         visibility: hidden;
     }
 
+    /* sets the style, size, and position of the questions */
     .question{
         position: absolute;
         background-color: var(--yellow);
@@ -117,12 +112,14 @@
         max-height: 50rem;
     }
 
+    /* sets base position of answers */
     .answers {
         top: 25rem;
         left: -35rem;
         position: absolute;
     }
 
+    /* sets specific position of the first answer choice */
     #a1{
         position:absolute;
         left:20rem;
@@ -131,6 +128,7 @@
         height: 10rem;
     }
 
+    /* sets specific position of the second answer choice */
     #a2{
         position:absolute;
         left: 65rem;
@@ -139,6 +137,7 @@
         height: 10rem;
     }
 
+    /* sets specific position of the third answer choice */
     #a3{
         position: absolute;
         left: 20rem;
@@ -148,6 +147,7 @@
         height: 10rem;
     }
 
+    /* sets specific position of the fourth answer choice */
     #a4{
         position: absolute;
         left: 65rem;
@@ -157,10 +157,12 @@
         height: 10rem;
     }
 
+    /* removes bullet points from the unordered list */
     ul {
         list-style: none;
     }
 
+    /* sets the position, size, and visibility of the input box */
     input {
         position: relative;
         z-index: 1;
@@ -170,6 +172,7 @@
         visibility: hidden;
     }
 
+    /* sets the position, size, and visibility of the submit button for the input box */
     #submit {
         font-size: 3rem;
         position: absolute;
@@ -182,7 +185,7 @@
 
     }
 
-
+    /* sets font styles for the input box */
     input[type='text']{
         font-size: 2rem;
         font-weight: bolder;
