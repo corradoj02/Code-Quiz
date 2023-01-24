@@ -238,6 +238,7 @@ function seeScores() {
 
         initials = getInitials();
         console.log(initials);
+        highscoreList = getHighscores();
         var score = localStorage.getItem("score");
         for (let i = 0; i < highscoreNames.length; i++){
             JSON.stringify(highscoreList);
