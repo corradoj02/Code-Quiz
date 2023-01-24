@@ -1,6 +1,6 @@
-# code-quiz
+# JavaScript Quiz
 ## A Timed Multiple Choice Quiz On JavaScript Fundamentals:
---
+---
 
 The goal of this project was to build a mulitple choice quiz on some fundamental JavaScript concepts. This quiz was meant to be a fun way to brush up on some key ideas behind how JavaScript is structured, and while building this application, some key criteria needed to be met which included:
 
@@ -15,7 +15,7 @@ The goal of this project was to build a mulitple choice quiz on some fundamental
 
 N/A
 
---
+
 ## Usage
 ---
 Link to page: https://corradoj02.github.io/code-quiz/
