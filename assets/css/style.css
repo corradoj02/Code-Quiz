@@ -6,6 +6,7 @@
     --black: #0B0C0C;
 }
 
+/* sets the position and sizing of the elements in the main class*/
     .main {
         display: flex;
         flex-direction: column;
@@ -17,16 +18,17 @@
         font-weight: bolder;
     }
 
+/* makes the starting page visible */
     .start-page {
         visibility: visible;
         width:15rem;
     }
-
+/* set the logo size */
     #logo{
         width:25rem;
         height:25rem;
     }
-
+/* sets the base styles and sizes for button elements */
     button {
         background-color: var(--yellow);
         color: var(--charcoal);
@@ -36,16 +38,16 @@
         transition: all;
         transition-property: transform, box-shadow;
     }
-
+/* sets hover function for buttons*/
     button:hover {
         cursor: pointer;
     }
-
+/* sets animation for activation of buttons */
     button:active {
         transform: scale(.9);
         box-shadow: 10px 10px 5px -4px var(--black);
     }
-
+/* sets visibility, size, and position of the start-button */
     #start-button {
         display:flex;
         position: relative;
@@ -55,7 +57,7 @@
         width:15rem;
         visibility: visible;
     }
-
+/* sets the position and visibility for the "high scores" button */
     #see-score {
         display:flex;
         position:absolute;
@@ -64,6 +66,7 @@
         visibility: visible;
     }
 
+    /* sets position and size of the timer */
     #timer-count {
         display:flex;
         font-weight: bolder;
@@ -72,6 +75,8 @@
         top: -2rem;
         font-size: 2rem;
     }
+
+    /* sets the position and size of the points counter */
     #points-count {
         display:flex;
         font-weight: bolder;

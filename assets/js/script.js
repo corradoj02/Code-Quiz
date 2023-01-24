@@ -78,6 +78,7 @@ function startGame(){
     }
     initialsBox.style.visibility = "hidden";
     highscoreButton.style.visibility = "visible";
+    questionEl.style.height = "28rem"
     startTimer();
     question();
 }
