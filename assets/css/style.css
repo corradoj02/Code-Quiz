@@ -61,6 +61,7 @@
         position:absolute;
         top: 40rem;
         left: 50rem;
+        visibility: visible;
     }
 
     #timer-count {
@@ -100,7 +101,15 @@
 
     .question{
         position: absolute;
-        width: 55rem;
+        background-color: var(--yellow);
+        border-radius: .5rem;
+        border: solid black;
+        padding: 2rem;
+        left: -7rem;
+        top: -5rem;
+        width: 70rem;
+        height: 28rem;
+        max-height: 50rem;
     }
 
     .answers {
@@ -112,33 +121,64 @@
     #a1{
         position:absolute;
         left:20rem;
-        font-size: 4rem;
-        width:35rem;
+        font-size: 3rem;
+        width:40rem;
+        height: 10rem;
     }
 
     #a2{
         position:absolute;
         left: 65rem;
-        font-size: 4rem;
-        width:35rem;
+        font-size: 3rem;
+        width:40rem;
+        height: 10rem;
     }
 
     #a3{
         position: absolute;
         left: 20rem;
-        font-size: 4rem;
-        width: 35rem;
+        font-size: 3rem;
+        width: 40rem;
         top:13rem;
+        height: 10rem;
     }
 
     #a4{
         position: absolute;
         left: 65rem;
-        font-size: 4rem;
+        font-size: 3rem;
         top: 13rem;
-        width:35rem;
+        width:40rem;
+        height: 10rem;
     }
 
     ul {
         list-style: none;
+    }
+
+    input {
+        position: relative;
+        z-index: 1;
+        top: -28.7rem;
+        left: -15rem;
+        height: 4rem;
+        visibility: hidden;
+    }
+
+    #submit {
+        font-size: 3rem;
+        position: absolute;
+        z-index: 1;
+        left: 10rem;
+        top:13.8rem;
+        background-color: var(--yellow);
+        font-weight: bolder;
+        visibility: hidden;
+
+    }
+
+
+    input[type='text']{
+        font-size: 2rem;
+        font-weight: bolder;
     }
